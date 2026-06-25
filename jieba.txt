@@ -11,18 +11,18 @@ if __name__ == "__main__":
 
     word_lst = []
     key_list = []
-    for line in open('D://jieba_new.txt'):  # 1.txt是需要分词统计的文档
+    for line in open('D://jieba_new.txt'):  # 1.txt锟斤拷锟斤拷要锟街达拷统锟狡碉拷锟侥碉拷
 
-        item = line.strip('\n\r').split('\t')  # 制表格切分
-        tags = jieba.analyse.extract_tags(item[0])  # jieba分词
+        item = line.strip('\n\r').split('\t')  # 锟狡憋拷锟斤拷锟叫凤拷
+        tags = jieba.analyse.extract_tags(item[0])  # jieba锟街达拷
         for t in tags:
             word_lst.append(t)
 
     word_dict = {}
-    with open("D://word.txt", 'w') as wf2:  # 打开文件
+    with open("D://word.txt", 'w') as wf2:  # 锟斤拷锟侥硷拷
 
         for item in word_lst:
-            if item not in word_dict:  # 统计数量
+            if item not in word_dict:  # 统锟斤拷锟斤拷锟斤拷
                 word_dict[item] = 1
             else:
                 word_dict[item] += 1
@@ -34,8 +34,8 @@ if __name__ == "__main__":
                 for key in word_dict:
                     if word_dict[key] == orderList[i]:
                         if word_dict[key] > 1:
-                            wf2.write(key + ' ' + str(word_dict[key]) + '\n')  # 写入txt文档
-        tmp = open('D://word.txt').readlines()  # 把内容一次性全部读取出来 是一个列表
+                            wf2.write(key + ' ' + str(word_dict[key]) + '\n')  # 写锟斤拷txt锟侥碉拷
+        tmp = open('D://word.txt').readlines()  # 锟斤拷锟斤拷锟斤拷一锟斤拷锟斤拷全锟斤拷锟斤拷取锟斤拷锟斤拷 锟斤拷一锟斤拷锟叫憋拷
         set(tmp)
 A = []
 B = []
@@ -48,6 +48,8 @@ for r in file:
     A.append(int_imporkey)
     B.append(int_sumnumber)
 fig = plt.figure()
-plt.pie(B,labels=A,autopct='%1.2f%%') #画饼图（数据，数据对应的标签，百分数保留两位小数点）
+plt.pie(B,labels=A,autopct='%1.2f%%') #锟斤拷锟斤拷图锟斤拷锟斤拷锟捷ｏ拷锟斤拷锟捷讹拷应锟侥憋拷签锟斤拷锟劫凤拷锟斤拷锟斤拷锟斤拷锟斤拷位小锟斤拷锟姐）
 plt.title("Pie chart")
 plt.show()
+
+ggggggggggggggggggg
