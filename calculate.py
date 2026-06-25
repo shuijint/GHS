@@ -54,3 +54,4 @@ def count():
         print('答案为：' + str(ans))
 profile.run('ghscount()')
 print("这是firstBanch分支修改过后的代码结果！")
+print("这是firstBanch分支修改过后的2次代码结果！")
