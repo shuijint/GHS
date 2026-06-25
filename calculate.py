@@ -52,4 +52,4 @@ def count():
             ans = Fraction(a1, b1) / Fraction(c1, d1)
             print('(', a1, '/', b1, ')', z, '(', c1, '/', d1, ')', '=')
         print('答案为：' + str(ans))
-profile.run('count()')
+profile.run('ghscount()')
